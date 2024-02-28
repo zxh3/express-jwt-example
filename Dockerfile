@@ -15,6 +15,8 @@ RUN pnpm install --frozen-lockfile
 # Copy the rest of your application's code
 COPY . .
 
+RUN pnpm build
+
 # Your application's default port, change if different
 EXPOSE 5000
 
